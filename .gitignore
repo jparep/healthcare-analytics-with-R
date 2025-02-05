@@ -1,0 +1,72 @@
+# R specific ignores
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj.user/*
+.Rproj.user/**
+
+# RStudio specific ignores
+.Rproj.user/
+.Rproj.user/*
+.Rproj.user/**
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.sas7bdat
+*.rda
+*.rds
+
+# Cache files
+*.Rcache
+*.Rcache/*
+*.Rcache/**
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+
+# Output files
+*.pdf
+*.html
+*.md
+*.docx
+*.pptx
+*.tex
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Python virtual environments
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other
+*.tar
+*.zip
+*.gz
+*.bz2
+*.xz
+*.rar
