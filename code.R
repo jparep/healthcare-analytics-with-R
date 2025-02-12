@@ -38,3 +38,18 @@ ggplot(data, aes(x = DataValueAlt)) +
 ggplot(data, aes(x = YearStart)) +
   geom_bar(fill = "green", alpha = 0.7) +
   labs(title = "Number of Records per Year", x = "YearStart", y = "Count")
+
+  # Checking the top 10 most frequent topics
+top_topics <- data %>%
+  group_by(Topic) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count)) %>%
+  head(10)
+
+print(top_topics)
+
+# Save the cleaned dataset
+write.csv(data, "cleaned_data.csv", row.names = FALSE)
+
+# Display first few rows of the cleaned data
+head(data)
