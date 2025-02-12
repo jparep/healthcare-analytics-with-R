@@ -39,7 +39,7 @@ ggplot(data, aes(x = YearStart)) +
   geom_bar(fill = "green", alpha = 0.7) +
   labs(title = "Number of Records per Year", x = "YearStart", y = "Count")
 
-  # Checking the top 10 most frequent topics
+# Checking the top 10 most frequent topics
 top_topics <- data %>%
   group_by(Topic) %>%
   summarise(count = n()) %>%
